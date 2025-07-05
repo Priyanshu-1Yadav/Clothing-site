@@ -1,0 +1,89 @@
+/* Parent container to center the auth container */
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+/* Auth Container */
+.auth-container {
+    margin: auto;
+    width: 30%;
+    height: auto;
+    padding: 2rem 3rem;
+    background-color: #F7FAFC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: #1F2937;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #111827; /* Darker shade for hover */
+}
+
+.auth-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.auth-footer a {
+    color: #2e3b55;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .parent-container {
+        height: 90vh;
+
+    }
+    .auth-container {
+        width: 75%;
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+
+    .form-group input {
+        padding: 10px;
+    }
+
+    .submit-button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}

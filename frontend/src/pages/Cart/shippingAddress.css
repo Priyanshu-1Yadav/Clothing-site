@@ -1,0 +1,149 @@
+.shipping-address-container {
+    padding: 0.5rem 2rem;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: solid 1px #ddd;
+}
+
+.saved-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.address-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #1F2937;
+}
+
+.address-operations {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    color: #1F2937;
+}
+
+.icon-button.delete:hover {
+    color: #ff4d4d;
+}
+
+.icon-button.update:hover {
+    color: #4CAF50;
+}
+
+.popup-form {
+    width: 35%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    border-radius: 15px;
+    animation: slide-up 0.5s ease-out;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content input {
+    margin-bottom: 12px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+.popup-content input:focus {
+    border-color: #1F2937;
+    outline: none;
+}
+
+.popup-content button {
+    padding: 12px;
+    margin-top: 12px;
+    background-color: #1F2937;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #374151;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1F2937;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #374151;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+@media (max-width: 600px) {
+    .shipping-address-container {
+        padding: 15px;
+    }
+
+    .popup-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .popup-content input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .popup-content button {
+        padding: 8px;
+    }
+}

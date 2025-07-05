@@ -1,0 +1,115 @@
+.order-details {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.order-details p{
+    text-align: left;
+}
+
+.order-details h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+
+.order-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #374151;
+}
+
+.products-container {
+    margin-bottom: 20px;
+}
+
+.products-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: solid #e4e5e7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item-details {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.shipping-details,
+.payment-details {
+    border: solid #e4e5e7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.shipping-info,
+.payment-info {
+    display: flex;
+    justify-content: space-between; /* Ensure labels and values are spaced out */
+    margin-top: 10px; /* Space between sections */
+}
+
+.shipping-info-labels,
+.payment-info-labels {
+    flex: 1; /* Allow labels to take equal space */
+    color: #6B7280; /* Gray color for labels */
+}
+
+.shipping-info-values,
+.payment-info-values {
+    flex: 1; /* Allow values to take equal space */
+    text-align: right; /* Align values to the right */
+    color: #374151; /* Dark Gray for values */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .order-details {
+        padding: 15px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .shipping-info,
+    .payment-info {
+        flex-direction: row; /* Ensure labels and values are in a row on mobile */
+    }
+
+    .shipping-info-labels,
+    .payment-info-labels {
+        text-align: left; /* Align labels to the left */
+    }
+
+    .shipping-info-values,
+    .payment-info-values {
+        text-align: right; /* Align values to the right */
+    }
+}

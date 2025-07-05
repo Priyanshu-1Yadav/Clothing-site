@@ -1,0 +1,111 @@
+.user-dashboard{
+  margin: auto;
+  width: 40%;
+  align-items: center;
+}
+
+.user-dashboard-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensures icons and text align horizontally */
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1F2937;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.user-dashboard-links:hover {
+  background-color: #E5E7EB;
+  color: #111827;
+}
+
+.user-dashboard-links .icon {
+  position: initial;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #1F2937;
+  /* Ensure icons are inline */
+  display: inline-block;
+}
+
+
+.account {
+  text-align: center;
+  font-size: 24px;
+  color: #1F2937;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.dashboard-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.profile-icon {
+  margin-bottom: 10px;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.dashboard-links {
+  margin-top: 20px;
+}
+
+.user-dashboard-links {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1F2937;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.user-dashboard-links:hover {
+  background-color: #E5E7EB;
+  color: #111827;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #6B7280;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .user-dashboard {
+    padding: 15px;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .account {
+    font-size: 20px;
+  }
+
+  .dashboard-head {
+    font-size: 18px;
+  }
+
+  .user-dashboard-links {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

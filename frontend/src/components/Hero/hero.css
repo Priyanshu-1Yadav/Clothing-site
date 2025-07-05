@@ -1,0 +1,191 @@
+/* General Styles */
+.hero-container {
+    background-color: #f7fafc;
+    padding: 0rem 0.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-collection {
+    flex: 1;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .hero-searchbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-search-input {
+    width: 70%;
+    padding: 1rem;
+    padding-left: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  
+  .hero-search-icon {
+    position: absolute;
+    left: 1rem;
+    color: #ccc;
+  }
+  
+  /* Carousel CSS */
+  .hero-carousel {
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden; /* Hide extra slides */
+  }
+  
+  .hero-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition between slides */
+  }
+  
+  .hero-slide-image {
+    width: 95%;
+    height: 75%;
+  }
+  
+  .hero-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-carousel-prev {
+    left: 1rem;
+  }
+  
+  .hero-carousel-next {
+    right: 1rem;
+  }
+  
+  .hero-shop-button {
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .hero-shop-button a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .hero-shop-icon {
+    margin-left: 0.5rem;
+  }
+  .hero-slide-link {
+    color: #333333; /* Ensure the text color is white */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-row {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .hero-searchbar {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .hero-search-input {
+      width: 100%;
+    }
+  
+    .hero-carousel-button {
+      padding: 0.4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-row {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .hero-title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .hero-searchbar {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  
+    .hero-search-input {
+      width: 100%;
+      padding: 0.75rem;
+      padding-left: 2.5rem;
+    }
+  
+    .hero-slides {
+      width: 200%; /* Ensure that the slides container can hold two slides */
+      height: 45vh
+    }
+  
+    .hero-carousel-button {
+      padding: 0.25rem;
+    }
+  
+    .hero-shop-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
+  

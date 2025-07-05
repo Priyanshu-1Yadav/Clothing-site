@@ -1,0 +1,84 @@
+/* confirmation.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px; /* Add padding for smaller screens */
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .confirmation-message {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for the message */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 400px;
+    width: 100%; /* Ensure it takes full width on smaller screens */
+  }
+  
+  .confirmation-icon {
+    color: #28a745; /* Green color for the success icon */
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333; /* Dark text for readability */
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555; /* Slightly lighter text for contrast */
+    margin-bottom: 10px;
+  }
+  
+  .go-home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width button */
+  }
+  
+  .go-home-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .confirmation-message {
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    h1 {
+      font-size: 20px; /* Smaller font size for heading */
+    }
+  
+    p {
+      font-size: 14px; /* Smaller font size for paragraphs */
+    }
+  
+    .confirmation-icon {
+      font-size: 40px; /* Smaller icon size */
+    }
+  
+    .go-home-button {
+      padding: 12px; /* Increase button padding */
+      font-size: 18px; /* Larger button text */
+    }
+  }
+  

@@ -1,0 +1,129 @@
+/* Container for the entire form */
+.add-coupon-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the form */
+.add-coupon-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Grouping the form elements */
+.add-coupon-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling the labels */
+.form-label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Styling the input, select, and textarea elements */
+.form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for inputs */
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.form-input[type="number"]::-webkit-outer-spin-button,
+.form-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Textarea styling */
+.form-textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Style for the checkbox and switch */
+.form-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+/* Styling the submit button */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #42464a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #3e4248;
+}
+
+.form-button:active {
+    background-color: #1F2937;
+}
+
+/* Small screens: mobile responsiveness */
+@media (max-width: 768px) {
+    .add-coupon-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .add-coupon-title {
+        font-size: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Success and error message styles */
+.success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.error-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #b5b5b5;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}

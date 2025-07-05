@@ -1,0 +1,139 @@
+/* Footer Styles */
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-logo-text {
+    font-size: 2rem; /* Larger font size for better visibility */
+    font-weight: 700; /* Bold font weight for prominence */
+    color: #1F2937; /* Set the text color */
+    text-decoration: none; /* Remove any underline or default link styles */
+    margin-bottom: 15px; /* Adds spacing below the logo */
+    letter-spacing: 1px; /* Adds a little space between the letters */
+    text-transform: uppercase; /* Uppercase for a more formal and strong presence */
+    transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .link-title {
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000000;
+  }
+  
+  .icon-chevron {
+    width: 20px;
+  }
+  
+  .footer-bottom {
+    background-color: rgba(2, 48, 71, 0.9);
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom-text {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer-bottom-link {
+    color: #b1e5ff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Links (optional) */
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    background-color: #b1e5ff;
+  }
+
+  @media screen and (max-width: 425px) {
+    .footer-container {
+      padding: 2rem;
+    }
+
+    .footer-logo-section {
+      width: 100%;
+    }
+
+    .footer-links {
+      margin-top: 30px;
+    }
+
+    .footer-bottom {
+      margin-bottom: 3.5rem;
+    }
+  }
+  
